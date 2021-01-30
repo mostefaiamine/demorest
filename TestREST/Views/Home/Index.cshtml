@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Services REST - Entités</h1>
+
+    <div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Filtrer</label>
+            <input type="text" class="form-control" id="txtFiltrer" placeholder="Texte de recherche">
+        </div>
+        <table class="table" id="datatable">
+            <thead>
+                <tr>
+                    <td>Numéro</td>
+                    <td>Raison sociale</td>
+                    <td>Adresse</td>
+                </tr>
+            </thead>
+            <tbody id="rbody">
+            </tbody>
+        </table>
+        <div id="empty" style="display:none">
+            <div class="alert alert-primary" role="alert">
+                Aucune entité à afficher
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <img src="~/images/loader.gif" style="max-width:50px" />
+        <p>Veuillez patienter...</p>
+    </div>
+
+</div>
